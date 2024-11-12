@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="klemmr02.klemmr02.MemoGUI">
+   <children>
+      <HBox prefHeight="541.0" prefWidth="956.0">
+         <children>
+            <Pane fx:id="memoPane" prefHeight="513.0" prefWidth="732.0" />
+            <VBox prefHeight="495.0" prefWidth="218.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="236.0" text="Choose Background Color">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="backgroundColorChoiceBox" prefHeight="26.0" prefWidth="247.0" />
+                  <Separator opacity="0.0" prefHeight="20.0" prefWidth="226.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="236.0" text="Choose Foreground Color">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="foregroundColorChoiceBox" prefHeight="26.0" prefWidth="247.0" />
+                  <Separator opacity="0.0" prefHeight="20.0" prefWidth="226.0" />
+                  <Button mnemonicParsing="false" onAction="#addMemo" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Add Memo">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#deleteMemo" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Delete Memo">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#readMemos" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Read Memos">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#writeMemos" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Write Memos">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#mergeMemos" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Merge Memos">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#moveMemo" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Move Memo">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#clearMemos" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Clear">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#quitGUI" prefHeight="38.0" prefWidth="226.0" style="-fx-font-size: 15;" text="Quit">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</HBox>
